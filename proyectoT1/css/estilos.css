@@ -1,0 +1,24 @@
+div {
+    background-color: #001821;
+    height: 200px;
+}
+#p1 {
+    color: #7D7DFF;
+    font-family: Sixtyfour Convergence;
+    font-weight: 400;
+    font-style: normal;
+}
+#gradiente {
+    height: 300px;
+    background-image: linear-gradient(to right top, #d16ba5, #d16add);
+}
+#textura {
+    height:300px;
+    background-image: url("/media/img2.jpg");
+    background-repeat: repeat-x;
+}
+body {
+    height:500px;
+    background-image: url("/media/img1.jpg");
+    background-repeat: repeat-y;
+}
