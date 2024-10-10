@@ -18,20 +18,30 @@
 <body>
     <header>
         <h1>CABECERA DE LA WEB</h1>
+        <a href="#imagenes">Menú Imágenes</a>
+        <a href="#figuras">Menú Figuras</a>
+        <a href="#enlaces">Menú Enlaces</a>
     </header>
     <main>
-        <section>
+        <section id="imagenes">
             <h2>Imágenes</h2>
             <article>
                 <h3>Siesta del Borrego</h3>
                 <img src="media/borrego.jpg" alt="borrego blanco comiendo en pradera verde" loading="lazy"/>
                 <img src="media/borrego1.jpg" alt="borrego marrón en primer plano con fondo de nieve" loading="lazy" width="200px"/> <!-- cambia solo o el width o el height, no ambas -->
             </article>
-            <article>
-                <h3>Encabezado de Artículo</h3>
+            <article id="figuras">
+                <h3>Figuras</h3>
+                <figure>
+                    <img src="media/img1.jpg" alt="imagen uno" width="200px">
+                    <figcaption>Título pie de imagen</figcaption>
+                </figure>
             </article>
-            <article>
-                <h3>Encabezado de Artículo</h3>
+            <article id="enlaces">
+                <h3>Enlaces simples</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, deserunt.</p>
+                <a href="https://github.com/dashboard" target="_blank">Texto que funciona como enlace</a>
+                <a href="https://www.google.es" targer="_blank"><img src="media/img2.jpg" alt="imagen 2 de madera" width="100px"/></a>
             </article>
         </section>
         <section>
@@ -43,6 +53,77 @@
                     ducimus dolorum quod amet fugiat iste vero distinctio. Ut ex magnam, delectus magni dolorum adipisci 
                     laboriosam fugiat itaque explicabo ipsum?
                 </p>
+            </article>
+        </section>
+        <section id="listas">
+            <h2>Listas</h2>
+            <article>
+                <h3>Listas sin orden</h3>
+                <ul>
+                    <li>Uno</li>
+                    <li>Dos</li>
+                    <li>Tres</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Lista con orden</h3>
+                <ol>
+                    <li>Primero</li>
+                    <li>Segundo</li>
+                    <li>Tercero</li>
+                </ol>
+            </article>
+            <article>
+                <h3>Lista de definición</h3>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Lenguaje de Marcado de Hiper Texto</dd>
+                    <dt>CSS</dt>
+                    <dd>Lenguaje para dar formato...</dd>
+                </dl>
+            </article>
+            <article>
+                <h3>Listas complejas</h3>
+                <ol>
+                    <li>Días</li>
+                    <li>
+                        <ul>
+                            <li>lunes</li>
+                            <li>martes</li>
+                        </ul>
+                        <li>Otra</li>
+                        <li>Nueva</li>
+                    </li>
+
+                </ol>
+            </article>
+        </section>
+        <section id="tablas">
+            <h2>Tablas</h2>
+            <article>
+                <h3>Tablas Simples</h3>
+                <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                    </tr>
+                    <tr>
+                        <td>Juan Manuel</td>
+                        <td>Mendizábal Amat</td>
+                    </tr>
+                    <tr>
+                        <td>Sergio</td>
+                        <td>Bau Nieto</td>
+                    </tr>
+                    <tr>
+                        <td>Damian</td>
+                        <td>Cabrera Sánchez</td>
+                    </tr>
+                    <tr>
+                        <td>Filogonio</td>
+                        <td>Bermudez de Todos los Santos</td>
+                    </tr>
+                </table>
             </article>
         </section>
     </main>
