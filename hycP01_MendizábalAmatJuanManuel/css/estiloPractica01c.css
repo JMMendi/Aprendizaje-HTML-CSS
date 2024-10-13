@@ -1,0 +1,38 @@
+tr,td,th {
+    border-collapse: collapse;
+    padding:20px;
+    border-style: double;
+    border-color: rgb(6, 12, 17);
+    text-align: center;
+    
+}
+
+
+
+td {
+    background-color: #C5A8E1;
+}
+
+#logo {
+    background-color: #A594F9;
+}
+
+img {
+    width: 150px;
+}
+
+#striped {
+    background-color: #CDC1FF;
+}
+
+#hours {
+    background-color: #9181A1;
+}
+
+#days {
+    background-color: #9181A1;
+}
+
+#recreo {
+    background-color: #E5D9F2;
+}

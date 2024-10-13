@@ -1,0 +1,27 @@
+#roman {
+    list-style-type: upper-roman;
+}
+
+#mayus {
+    list-style-type: upper-alpha;
+}
+
+#circuloLleno {
+    list-style-type: disc;
+}
+
+#diez {
+    list-style-type: decimal;
+}
+
+#square {
+    list-style-type: square;
+}
+
+#circuloVacio {
+    list-style-type: circle;
+}
+
+#foot {
+    margin:0;
+}
