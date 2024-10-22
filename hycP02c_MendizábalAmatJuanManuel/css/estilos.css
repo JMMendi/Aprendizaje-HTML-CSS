@@ -1,1 +1,29 @@
 /* Juan Manuel Mendizábal Amat */
+
+header {
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(to top left, #B5CFB7, #CADABF, #E7E8D8);
+}
+
+#primer {
+    background-image: linear-gradient(to top left,#BC9F8B, #B5CFB7);
+}
+
+#segundo {
+    background-image: linear-gradient(to top left,#B5CFB7, #CADABF);
+}
+
+#tercero {
+    background-image: linear-gradient(to top left,#CADABF, #E7E8D8);
+}
+
+#ultimo {
+    background-color: #E7E8D8;
+}
+
+textarea {
+    resize:none
+}

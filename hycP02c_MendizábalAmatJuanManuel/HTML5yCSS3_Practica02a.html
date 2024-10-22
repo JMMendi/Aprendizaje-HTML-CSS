@@ -20,36 +20,36 @@
         <h1>Hoja de Inscripción en los ciclos formativos de Grado Superior</h1>
     </header>
     <main>
-        <form method="POST" enctype="multipart/form-data" autocomplete="on">
-            <fieldset>
+        <form method="POST" enctype="multipart/form-data" aria-autocomplete="on">
+            <fieldset id="primer">
                 <legend>Datos Personales</legend>
-                <label for="nombre">Nombre: </label>
-                <input type="text" name="nombre" id="nombre" required>
+                <span id="nom">Nombre:</span>
+                <input type="text" name="nombre" id="nombre" aria-labelledby="nom" required>
 
-                <label for="apellidos">Apellidos: </label>
-                <input type="text" name="apellidos" id="apellidos" required>
+                <span id="ape">Apellidos:</span>
+                <input type="text" name="apellidos" id="apellidos" aria-labelledby="ape" required>
 
-                <label for="dni">DNI: </label>
-                <input type="text" name="dni" id="dni" pattern="[0-9]{8}[A-Z]{1}" placeholder="12345678A" required>
+                <span id="labelDni">DNI: </span>
+                <input type="text" name="dni" id="dni" aria-labelledby="labelDni" pattern="[0-9]{8}[A-Z]{1}" placeholder="12345678A" required>
 
-                <label for="fechaNacimiento">Fecha de Nacimiento: </label>
-                <input type="date" name="fechaNacimiento" id="fechaNacimiento" required>
-
-                <br><br>
-
-                <label for="telefono">Teléfono: </label>
-                <input type="text" name="telefono" id="telefono" placeholder="+34 123456789" required>
-
-                <label for="email">Email: </label>
-                <input type="text" name="email" id="email" placeholder="nombre@servidor.es" required>
+                <span id="labelFecha">Fecha de Nacimiento: </span>
+                <input type="date" name="fechaNacimiento" id="fechaNacimiento" aria-labelledby="labelFecha" required>
 
                 <br><br>
 
-                <label for="localidad">Localidad: </label>
-                <input type="text" name="localidad" id="localidad">
+                <span id="labelTel">Teléfono: </span>
+                <input type="text" name="telefono" id="telefono" pattern="[0-9]{3}-[0-9]{9}" aria-labelledby="labelTel" placeholder="034 123456789" required>
 
-                <label for="provincia">Provincia: </label>
-                <input list="provincia" required>
+                <span id="labelEmail">Email: </span>
+                <input type="text" name="email" id="email" aria-labelledby="labelEmail" placeholder="nombre@servidor.es" required>
+
+                <br><br>
+
+                <span id="labelLocalidad">Localidad: </span>
+                <input type="text" name="localidad" id="localidad" aria-labelledby="labelLocalidad">
+
+                <span id="labelProvincia">Provincia: </span>
+                <input list="provincia" aria-labelledby="labelProvincia" required>
                 <datalist id="provincia">
                     <option value="Almería"></option>
                     <option value="Grandada"></option>
@@ -61,13 +61,51 @@
                     <option value="Málaga"></option>
                 </datalist>
 
-                <label for="direccion">Dirección: </label>
-                <input type="text" name="direccion" id="direccion"required>
+                <span id="labelDireccion">Dirección: </span>
+                <input type="text" name="direccion" id="direccion" aria-labelledby="labelDireccion" required>
 
-                <label for="codigoPostal">Código Postal: </label>
-                <input type="text" name="codigoPostal" id="codigoPostal" required>
+                <span id="labelCodigoPostal">Código Postal: </span>
+                <input type="text" name="codigoPostal" id="codigoPostal" aria-labelledby="labelCodigoPostal" required>
             </fieldset>
 
+            <br>
+
+            <fieldset id="segundo">
+                <legend>Forma de Acceso</legend>
+                <input type="radio" name="directo" id="rb1" value="">Directo<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rb1a" id="bach" value="">Bachillerato o equivaletnte a efectos académicos<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rb1a" id="cfgm" value="">Técnico de FP (CFGM)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rb1a" id="cfgs" value="">Técnico Superior de FP (CFGS) o equivalente a efectos académicos.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="esp1">Especifique Denominación de la Titulación</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="esp1"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rb1a" id="uni" value="">Titulación universitaria oficial.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="esp2">Especifique Denominación de la Titulación</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="esp2"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rb1a" id="otros" value="">Otros: 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="esp3">(especifique)</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="esp3"><br>
+                <input type="radio" name="prueba" id="rb2" value="">Prueba Libre<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rb2b" id="accform" value="">Prueba de acceso a los ciclos formativos de grado<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rb2b" id="accuni" value="">Prueba de acceso a la universdad para mayores de 65 años<br>
+            </fieldset>
+
+            <br>
+
+            <fieldset id="tercero">
+                <legend>Documentos Adjuntados</legend>
+                <input type="checkbox" name="dni" id="dni"> Fotocopia DNI. <input type="file" id="fileDni" name="fileDni"><br><br>
+                <input type="checkbox" name="certificado" id="certificado">Certificado Académico. <input type="file" id="fileCertificado" name="fileCertificado"><br><br>
+                <input type="checkbox" name="otrosDocu" id="otrosDocu">Otros documentos (especifique). <input type="file" id="fileOtros" name="fileOtros"><br><br>
+            </fieldset>
+
+            <fieldset id="ultimo">
+                <legend>Consentimiento</legend>
+                <input type="checkbox" name="tco" id="tco" required> He leído los términos y condiciones de uso. <br><br>
+                <input type="checkbox" name="prueba" id="prueba"> Permito que se revisen y verifiquen los datos cumplimentados en este documento.<br><br>
+                <textarea name="observaciones" id="observaciones" placeholder="Observaciones..." cols="50" rows="5"></textarea>
+            </fieldset>
+            <br>
+            <button type="submit"><img src="media/enviar.png" alt="Enviar Formulario" width="30"> Enviar Formulario</button>
         </form>
     </main>
     <footer>
