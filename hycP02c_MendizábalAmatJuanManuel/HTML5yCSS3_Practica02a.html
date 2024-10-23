@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
 
-    <meta name="author" content="Juan Manuel Mendizábal Amat"/>
-    <meta name="description" content="descripcion a modificar"/>
-    <meta name="keywords" content="palabras, clave, separadas, por, coma"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Juan Manuel Mendizábal Amat" />
+    <meta name="description" content="descripcion a modificar" />
+    <meta name="keywords" content="palabras, clave, separadas, por, coma" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/estilos.css"/>
-    <link rel="icon" type="img/png" href="media/logoIes.png"/>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="icon" type="img/png" href="media/logoIes.png" />
     <title>HTML5yCSS3 Práctica 02a - Juan Manuel Mendizábal Amat</title>
-        <!-- Juan Manuel Mendizábal Amat -->
-        <!-- ALT+SHIFT+A -->
+    <!-- Juan Manuel Mendizábal Amat -->
+    <!-- ALT+SHIFT+A -->
 
 </head>
+
 <body>
     <header>
         <h1>Hoja de Inscripción en los ciclos formativos de Grado Superior</h1>
     </header>
     <main>
-        <form method="POST" enctype="multipart/form-data" aria-autocomplete="on">
+        <form method="POST" enctype="multipart/form-data" autocomplete="on" aria-autocomplete">
             <fieldset id="primer">
                 <legend>Datos Personales</legend>
                 <span id="nom">Nombre:</span>
@@ -30,7 +32,8 @@
                 <input type="text" name="apellidos" id="apellidos" aria-labelledby="ape" required>
 
                 <span id="labelDni">DNI: </span>
-                <input type="text" name="dni" id="dni" aria-labelledby="labelDni" pattern="[0-9]{8}[A-Z]{1}" placeholder="12345678A" required>
+                <input type="text" name="dni" id="dni" aria-labelledby="labelDni" pattern="[0-9]{8}[A-Z]{1}"
+                    placeholder="12345678A" required>
 
                 <span id="labelFecha">Fecha de Nacimiento: </span>
                 <input type="date" name="fechaNacimiento" id="fechaNacimiento" aria-labelledby="labelFecha" required>
@@ -38,10 +41,12 @@
                 <br><br>
 
                 <span id="labelTel">Teléfono: </span>
-                <input type="text" name="telefono" id="telefono" pattern="[0-9]{3}-[0-9]{9}" aria-labelledby="labelTel" placeholder="034 123456789" required>
+                <input type="text" name="telefono" id="telefono" pattern="[0-9]{3}-[0-9]{9}" aria-labelledby="labelTel"
+                    placeholder="034 123456789" required>
 
                 <span id="labelEmail">Email: </span>
-                <input type="text" name="email" id="email" aria-labelledby="labelEmail" placeholder="nombre@servidor.es" required>
+                <input type="text" name="email" id="email" aria-labelledby="labelEmail" placeholder="nombre@servidor.es"
+                    required>
 
                 <br><br>
 
@@ -73,39 +78,56 @@
             <fieldset id="segundo">
                 <legend>Forma de Acceso</legend>
                 <input type="radio" name="directo" id="rb1" value="">Directo<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rb1a" id="bach" value="">Bachillerato o equivaletnte a efectos académicos<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rb1a" id="cfgm" value="">Técnico de FP (CFGM)<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rb1a" id="cfgs" value="">Técnico Superior de FP (CFGS) o equivalente a efectos académicos.<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="esp1">Especifique Denominación de la Titulación</label>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="esp1"><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rb1a" id="uni" value="">Titulación universitaria oficial.<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="esp2">Especifique Denominación de la Titulación</label>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="esp2"><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rb1a" id="otros" value="">Otros: 
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="esp3">(especifique)</label>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="esp3"><br>
+                <article class="radioButton">
+                    <input type="radio" name="rb1a" id="bach" value="">Bachillerato o equivaletnte a efectos
+                    académicos<br>
+                    <input type="radio" name="rb1a" id="cfgm" value="">Técnico de FP (CFGM)<br>
+                    <input type="radio" name="rb1a" id="cfgs" value="">Técnico Superior de FP (CFGS) o equivalente a
+                    efectos académicos.
+                    <label for="esp1">Especifique Denominación de la Titulación</label>
+                    <input type="text" name="esp1"><br>
+                    <input type="radio" name="rb1a" id="uni" value="">Titulación universitaria oficial.
+                    <label for="esp2">Especifique Denominación de la Titulación</label>
+                    <input type="text" name="esp2"><br>
+                    <input type="radio" name="rb1a" id="otros" value="">Otros:
+                    <label for="esp3">(especifique)</label>
+                    <input type="text" name="esp3"><br>
+                </article>
+
                 <input type="radio" name="prueba" id="rb2" value="">Prueba Libre<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rb2b" id="accform" value="">Prueba de acceso a los ciclos formativos de grado<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="rb2b" id="accuni" value="">Prueba de acceso a la universdad para mayores de 65 años<br>
+                <article class="radioButton">
+                    <input type="radio" name="rb2b" id="accform" value="">Prueba de acceso a los ciclos formativos de
+                    grado<br>
+                    <input type="radio" name="rb2b" id="accuni" value="">Prueba de acceso a la universdad para mayores
+                    de 65 años<br>
+                </article>
+
             </fieldset>
 
             <br>
 
             <fieldset id="tercero">
                 <legend>Documentos Adjuntados</legend>
-                <input type="checkbox" name="dni" id="dni"> Fotocopia DNI. <input type="file" id="fileDni" name="fileDni"><br><br>
-                <input type="checkbox" name="certificado" id="certificado">Certificado Académico. <input type="file" id="fileCertificado" name="fileCertificado"><br><br>
-                <input type="checkbox" name="otrosDocu" id="otrosDocu">Otros documentos (especifique). <input type="file" id="fileOtros" name="fileOtros"><br><br>
+                <input type="checkbox" name="dni" id="dni"> Fotocopia DNI. <input type="file" id="fileDni"
+                    name="fileDni"><br><br>
+                <input type="checkbox" name="certificado" id="certificado">Certificado Académico. <input type="file"
+                    id="fileCertificado" name="fileCertificado"><br><br>
+                <input type="checkbox" name="otrosDocu" id="otrosDocu">Otros documentos (especifique). <input
+                    type="file" id="fileOtros" name="fileOtros"><br><br>
             </fieldset>
 
             <fieldset id="ultimo">
                 <legend>Consentimiento</legend>
-                <input type="checkbox" name="tco" id="tco" required> He leído los términos y condiciones de uso. <br><br>
-                <input type="checkbox" name="prueba" id="prueba"> Permito que se revisen y verifiquen los datos cumplimentados en este documento.<br><br>
-                <textarea name="observaciones" id="observaciones" placeholder="Observaciones..." cols="50" rows="5"></textarea>
+                <input type="checkbox" name="tco" id="tco" aria-checked="on" checked required> He leído los términos y condiciones de uso.
+                <br><br>
+                <input type="checkbox" name="prueba" aria-checked="off" id="prueba"> Permito que se revisen y verifiquen los datos
+                cumplimentados en este documento.<br><br>
+                <textarea name="observaciones" id="observaciones" placeholder="Observaciones..." cols="50"
+                    rows="5"></textarea>
             </fieldset>
             <br>
-            <button type="submit"><img src="media/enviar.png" alt="Enviar Formulario" width="30"> Enviar Formulario</button>
+            <button type="submit"><img src="media/enviar.png" alt="Enviar Formulario" width="30"> Enviar
+                Formulario</button>
         </form>
     </main>
     <footer>
@@ -118,4 +140,5 @@
         </address>
     </footer>
 </body>
+
 </html>
