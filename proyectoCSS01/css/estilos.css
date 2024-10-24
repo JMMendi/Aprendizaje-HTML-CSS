@@ -1,0 +1,36 @@
+/* Juan Manuel Mendizábal Amat */
+
+h1, h2 {
+    color:purple;
+}
+
+p {
+    color:cadetblue;
+}
+
+#projo {
+    color:red;
+}
+
+.azul {
+    color:blue;
+}
+
+.fondo {
+    background-color: darkgray;
+    color:orange;
+}
+
+/* * {
+    margin:0px;
+} */
+
+section ~ h2 {
+    border: dashed 3px black;
+}
+
+#cuadrado {
+    width: 20% ;
+    height: 12em ;
+    background-color: coral;
+}
