@@ -1,11 +1,26 @@
 /* Juan Manuel Mendizábal Amat */
 
+h1 {
+    text-shadow: 4px 6px pink;
+    font-family: Verdana, Arial, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+}
+
 h1, h2 {
     color:purple;
+    text-align: center;
+    text-decoration: underline red dotted 5px;
+    text-transform: capitalize;
 }
 
 p {
     color:cadetblue;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-size: bolder 3vw "MV Boli", cursive;
+    word-spacing: 10px;
 }
 
 #projo {
@@ -33,4 +48,12 @@ section ~ h2 {
     width: 20% ;
     height: 12em ;
     background-color: coral;
+    border: 5px solid blue;
+    border-radius: 100px;
+    margin: 50px auto;
+    padding: 50px 15px;
+}
+
+#super {
+    vertical-align: super;
 }
