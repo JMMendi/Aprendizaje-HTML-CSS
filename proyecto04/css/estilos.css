@@ -1,0 +1,32 @@
+/* Juan Manuel Mendizábal Amat */
+
+h3 {
+    text-decoration: underline;
+}
+
+#cambria {
+    font-family: Cambria, serif;
+    font-size: 1.5vw;
+}
+
+.rubik-wet-paint-regular {
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* <uniquifier>: Use a unique and descriptive class name */
+
+.danfo {
+    font-family: "Danfo", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "ELSH" 0;
+}
+
+/* .css-selector {
+    font-family: 'Font Name', serif;
+    } */
