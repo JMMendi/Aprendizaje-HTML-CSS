@@ -1,0 +1,117 @@
+/* Juan Manuel Mendizábal Amat */
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1vw;
+    margin: 30px;
+    text-align: justify;
+}
+
+header {
+    background-image: radial-gradient( #E3A5C7, #B692C2);
+    border: 1px, solid, black;
+}
+
+h1 {
+    font-size: 3vw;
+    color: darkorchid;
+}
+
+main {
+    border: 1px, double, purple;
+    background-color: #522258;
+}
+
+section {
+    border: 1px, solid, magenta;
+    background-color: #D95F59;
+}
+
+h2 {
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+#mvboli {
+    font-family: 'MV Boli', sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h3 {
+    text-decoration: underline;
+    text-decoration-color: purple ;
+}
+
+.shadows-into-light-regular {
+    font-family: "Shadows Into Light", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.exo-2 {
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vw;
+}
+  
+
+.kablammo {
+  font-family: "Kablammo", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 0;
+}
+
+#effect1 {
+    font-size: 3vw;
+}
+
+#effect2 {
+    font-size: 3vw;
+    
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40;
+  color: #75FB4C;
+}
+
+.fa-stamp {
+    color: orange;
+    font-size: 4vw;
+}
+
+.fa-font-awesome {
+    color: red;
+    font-size: 50px;
+}
+
+.fa-hippo {
+    color:gray;
+    font-size: 5vw;
+}
+
+footer {
+    border: 1px, solid, magenta;
+    background-color: #8C3061;
+    border-radius: 10px;
+}
