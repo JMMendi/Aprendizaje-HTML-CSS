@@ -1,0 +1,68 @@
+/*Juan Manuel Mendizábal Amat */
+
+/* 4 selectores (Explicalos)*/
+
+body {
+    background-color: lightyellow;
+}
+
+header {
+    border-color: orange;
+    border-width: 2px;
+    border-radius: 2px;
+    border-style: double;
+    text-align: center;
+}
+
+h2 {
+    color:royalblue;
+    font-size: 2vw;
+    text-decoration: underline;
+}
+
+img {
+    height:400px;
+    margin-right: 10px;
+}
+
+/* 4 pseudoselectores */
+
+img:hover {
+    border-color:black;
+    border-style: dashed;
+    height: 500px;
+}
+
+ul:first-child {
+    border-color: red;
+    border-style: dotted;
+    border-radius: 5px;
+}
+
+article:first-child h3{
+    color:green;
+    text-decoration: underline;
+}
+
+a:link {
+    color:orange;
+    text-decoration: line-through;
+}
+
+
+/* 4 pseudoelementos */
+
+p::first-letter {
+    font-size: 3vw;
+}
+
+li::after {
+    content: "***";
+    font-size: 2vw;
+}
+
+li::before {
+    content: "***";
+    font-size: 2vw;
+}
+
