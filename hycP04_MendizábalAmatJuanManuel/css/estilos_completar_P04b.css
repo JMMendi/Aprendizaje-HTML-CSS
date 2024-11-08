@@ -2,24 +2,28 @@
 
 /* 4 selectores (Explicalos)*/
 
+/* En el cuerpo del html he puesto un color suave, en este caso lightyellow. */
 body {
     background-color: lightyellow;
 }
 
+/* En la cabecera he añadido un borde naranja con estilo groove, redondeado y un grosor de 2px. Finalmente alineo el texto al centro. */
 header {
     border-color: orange;
     border-width: 2px;
     border-radius: 2px;
-    border-style: double;
+    border-style: groove;
     text-align: center;
 }
 
+/* A todos los h2 les pongo un color royalblue, los subrayo y les doy un tamaño de fuente de 2vw. */
 h2 {
     color:royalblue;
     font-size: 2vw;
     text-decoration: underline;
 }
 
+/* A las imagenes les he puesto un tamaño predeterminado con el height de 400 píxeles y añadido un margen por la derecha de 10 píxeles. */
 img {
     height:400px;
     margin-right: 10px;
@@ -27,23 +31,27 @@ img {
 
 /* 4 pseudoselectores */
 
+/* Cuando pones el cursor sobre la imagen, le añade un borde negro de estilo dashed y redimensiona la imagen a 500 píxeles. */
 img:hover {
     border-color:black;
     border-style: dashed;
     height: 500px;
 }
 
+/* Si el primer hijo es un ul (lista desordenada), le añade un borde rojo de estilo dotted con un redondeado de 5 píxeles. */
 ul:first-child {
     border-color: red;
     border-style: dotted;
     border-radius: 5px;
 }
 
+/* En los h3 por cada artículo que sea primer hijo se le aplicará color de fuente verde y un subrayado. */
 article:first-child h3{
     color:green;
     text-decoration: underline;
 }
 
+/* A cada enlace/hiperenlace le pone color naranja al texto y lo tacha */
 a:link {
     color:orange;
     text-decoration: line-through;
@@ -52,17 +60,27 @@ a:link {
 
 /* 4 pseudoelementos */
 
+/* A la primera letra de cada párrafo se le aplica un tamaño de 3vw */
 p::first-letter {
     font-size: 3vw;
 }
 
+/* Después de cada elemento de una lista se le escribe tres asteríscos y le aumenta el tamaño a 2vw */
 li::after {
     content: "***";
     font-size: 2vw;
 }
 
+/* Antes de cada elemento de una lista se le escribe tres asteríscos y le aumenta el tamaño a 2vw */
+
 li::before {
     content: "***";
     font-size: 2vw;
+}
+
+/* Al subrayado que puedas hacer con el puntero, pinta el texto de color naranja y el fondo de color azul */
+::selection {
+    color:orange;
+    background-color: blue;
 }
 
