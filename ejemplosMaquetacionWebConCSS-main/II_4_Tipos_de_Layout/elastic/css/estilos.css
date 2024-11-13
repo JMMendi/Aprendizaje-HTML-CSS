@@ -1,0 +1,26 @@
+main {
+  background-color: blue;
+  margin: 20px auto;
+  height: 400px;
+  padding: 20px;
+  width: 60em;
+}
+
+header {
+  background-color: orange;
+  height: 40px;
+}
+
+section {
+  background-color: green;
+  height: 340px;
+  margin-top: 20px;
+  width: 25em;
+}
+section:nth-child(1) {
+  float: left;
+}
+
+section:nth-child(2) {
+  float: right;
+}
