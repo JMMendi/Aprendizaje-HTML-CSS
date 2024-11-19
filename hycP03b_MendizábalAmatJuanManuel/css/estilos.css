@@ -15,6 +15,7 @@ header {
 h1 {
     font-size: 3vw;
     color: darkorchid;
+    text-align: center;
 }
 
 main {
@@ -30,6 +31,7 @@ section {
 h2 {
     text-decoration: underline;
     text-decoration-color: blue;
+    
 }
 
 #mvboli {
@@ -84,6 +86,7 @@ h3 {
   'GRAD' 0,
   'opsz' 40;
   color: #75FB4C;
+  font-size: 3vw;
 }
 
 .fa-stamp {
@@ -99,6 +102,21 @@ h3 {
 .fa-hippo {
     color:gray;
     font-size: 5vw;
+}
+
+.bi-calendar-month-fill {
+    font-size: 6vw;
+    color:blueviolet;
+}
+
+.bi-basket-fill {
+    font-size:4vw;
+    color:brown;
+}
+
+.bi-brightness-high-fill{
+    font-size:7vw;
+    color:yellow;
 }
 
 footer {
