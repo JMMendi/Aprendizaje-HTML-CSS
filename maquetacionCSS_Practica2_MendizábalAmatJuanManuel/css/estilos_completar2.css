@@ -1,0 +1,52 @@
+
+/*Caracteristicas generales:  fuente Font google, tamaño de fuente responsive*/
+  /* BOX-SIZING para calcular directamente todas las dimensiones de las cajas */
+  /* RESETEO LIMITADO DE PROPIEDADES*/
+* {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+  margin:0px
+}
+
+
+
+
+
+/*Aspecto especifico*/
+/* Establecemos el centrado y las dimensiones de los elementos principales con una ancho máximo y mínimo*/
+header, nav, main, footer {
+  max-width: 100%;
+  min-width: 10%;
+}
+/* Estilos para la cabecera (header)*/
+
+/* Estilos para el menú principal (nav)*/
+nav {
+  width: 100%;
+  height: 5vh;
+  background-color: blue;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 1vw;
+  list-style: none;
+  margin-right: 5%;
+}
+nav ul li:hover {
+  font-size: 1.5vw;
+  background-color: darkblue;
+}
+  
+/* Call for action para Comprar , la palabra "compra" en un link sin subrayado*/
+
+/* Elemento (section vintage) con las 3 cards */
+
+/* Sección con la nevera y los tres párrafos descriptivos (section)*/
+
+/* Sección para la galería de imágenes (section)*/
+
+/* Estilos para el pie de página (footer)*/
+
