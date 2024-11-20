@@ -68,6 +68,10 @@ img {
     border: 2px solid gold;
 }
 
+img:hover {
+    height: 300px;
+}
+
 #img1 {
     position:absolute;
     display: inline-block;
