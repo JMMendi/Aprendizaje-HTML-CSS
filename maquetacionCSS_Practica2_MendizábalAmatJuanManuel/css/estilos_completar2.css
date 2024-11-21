@@ -11,9 +11,6 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 
 
-
-
-
 /*Aspecto especifico*/
 /* Establecemos el centrado y las dimensiones de los elementos principales con una ancho máximo y mínimo*/
 header, nav, main, footer {
@@ -22,18 +19,33 @@ header, nav, main, footer {
 }
 /* Estilos para la cabecera (header)*/
 
+header {
+  background-image: linear-gradient(to right, white, #FFE6A9);
+  top: 0;
+  height: 40vh;
+  width: 100%;
+  text-align: center;
+}
+
+header img {
+  height: 30vh;
+  margin-top: 2%;
+}
+
 /* Estilos para el menú principal (nav)*/
 nav {
   width: 100%;
-  height: 5vh;
+  height: 100%;
   background-color: blue;
+  text-align: center;
 }
 
 nav ul li {
   display: inline-block;
   font-size: 1vw;
   list-style: none;
-  margin-right: 5%;
+  padding: 6px;
+  margin-right: 10%;
 }
 nav ul li:hover {
   font-size: 1.5vw;
@@ -42,11 +54,75 @@ nav ul li:hover {
   
 /* Call for action para Comprar , la palabra "compra" en un link sin subrayado*/
 
+aside {
+  position: sticky;
+  background-color: aqua;
+  border: 2px solid black;
+  border-radius: 30px;
+  left: 0px;
+  width: 10%;
+  padding: 2%;
+  text-align: center;
+  font-size: 1vw;
+}
+
+aside a {
+  font-size: 1.5vw;
+  margin: 10px;
+  text-decoration: none;
+  background-color: seagreen;
+  border: 1px solid seagreen;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 1%;
+  
+}
+
 /* Elemento (section vintage) con las 3 cards */
 
+h1 {
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+#tresCartas {
+  text-align: center;
+  column-count: 3;
+  column-gap: 0px;
+  
+}
+
+section {
+  margin-top: 1%;
+}
+
+figure {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#medio {
+  border: 2px solid red;
+  border-left-style: none;
+  border-right-style: none;
+}
+
 /* Sección con la nevera y los tres párrafos descriptivos (section)*/
+
+section img {
+  height: 20vh;
+  float: left;
+}
+section p {
+  float:right;
+}
 
 /* Sección para la galería de imágenes (section)*/
 
 /* Estilos para el pie de página (footer)*/
 
+footer {
+  position: fixed;
+  bottom: 0;
+}

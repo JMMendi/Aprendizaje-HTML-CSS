@@ -55,7 +55,7 @@ nav ul {
 }
 
 nav ul li{
-    display: inline;
+    display: inline-block;
     margin-left: 200px;
     color: #FFEC97;
     font-size: 1vw;
@@ -124,17 +124,12 @@ img:hover {
     transform: rotate(234deg);
 }
 
-#aside {
-    height: 100px;
-    
-}
-
 aside {
     position: fixed;
-    height:200px;
-    width:160px;
+    height: 25vh;
+    width: 8vw;
     left: 0;
-    bottom: 450px;
+    bottom: 40vh;
     z-index: 1;
     background-color: #FFEC97;
     padding-top: 20px;
