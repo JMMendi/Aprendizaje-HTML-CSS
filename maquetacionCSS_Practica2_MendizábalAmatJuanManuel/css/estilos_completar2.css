@@ -2,8 +2,10 @@
 /*Caracteristicas generales:  fuente Font google, tamaño de fuente responsive*/
   /* BOX-SIZING para calcular directamente todas las dimensiones de las cajas */
   /* RESETEO LIMITADO DE PROPIEDADES*/
-* {
+*, *::before, *::after {
   box-sizing: border-box;
+  margin:0;
+  padding: 0;
 }
 
 body, h1, h2, h3, h4, h5, h6, p {
@@ -110,9 +112,14 @@ figure {
 
 /* Sección con la nevera y los tres párrafos descriptivos (section)*/
 
+#tresCartas {
+  text-align: center;
+  height:20vh;
+}
+
 section img {
   height: 20vh;
-  float: left;
+  /* float: left; */
 }
 section p {
   float:right;
