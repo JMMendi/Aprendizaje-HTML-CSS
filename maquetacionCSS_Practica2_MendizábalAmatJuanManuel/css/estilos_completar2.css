@@ -23,7 +23,6 @@ header, nav, main, footer {
 
 header {
   background-image: linear-gradient(to right, white, #FFE6A9);
-  top: 0;
   height: 40vh;
   width: 100%;
   text-align: center;
@@ -36,6 +35,8 @@ header img {
 
 /* Estilos para el menú principal (nav)*/
 nav {
+  top: 0;
+  position: sticky;
   width: 100%;
   height: 100%;
   background-color: blue;
@@ -97,6 +98,12 @@ h1 {
 
 section {
   margin-top: 1%;
+  width: 100%;
+}
+
+section figure img {
+  height: 13vh;
+  /* float: left; */
 }
 
 figure {
@@ -112,24 +119,60 @@ figure {
 
 /* Sección con la nevera y los tres párrafos descriptivos (section)*/
 
-#tresCartas {
-  text-align: center;
-  height:20vh;
+#imagen {
+  height:55vh;
+  margin-left:15%;
 }
 
-section img {
-  height: 20vh;
-  /* float: left; */
+#imagen figure img {
+  height: 50vh;
+  float:left;
+
 }
+
 section p {
-  float:right;
+  width: 70%;
+  margin-bottom: 1%;
+  margin-right: 10%;
+}
+section p::first-letter{
+  font-size: 3vw;
+  color: red;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Sección para la galería de imágenes (section)*/
 
+.galeria {
+  width:100%;
+  text-align: center;
+  height:50vh;
+}
+
+article img {
+  margin: 0px;
+  padding: 0px;
+  height: 15vh;
+}
+
+
+
+
 /* Estilos para el pie de página (footer)*/
 
 footer {
-  position: fixed;
-  bottom: 0;
+  height:10vh;
+  width: 100%;
+  background-color: purple;
+  padding-top: 1%;
+  color:yellow;
+  padding-left: 3%;
+}
+
+address {
+  column-count: 3;
+}
+
+address ul li{
+  list-style: none;
 }
