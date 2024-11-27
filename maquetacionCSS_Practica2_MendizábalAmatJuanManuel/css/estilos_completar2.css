@@ -9,7 +9,8 @@
 }
 
 body, h1, h2, h3, h4, h5, h6, p {
-  margin:0px
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1vw;
 }
 
 
@@ -41,6 +42,7 @@ nav {
   height: 100%;
   background-color: blue;
   text-align: center;
+  padding: 2%;
 }
 
 nav ul li {
@@ -57,13 +59,16 @@ nav ul li:hover {
   
 /* Call for action para Comprar , la palabra "compra" en un link sin subrayado*/
 
+
 aside {
-  position: sticky;
+  position: fixed;
   background-color: aqua;
   border: 2px solid black;
   border-radius: 30px;
-  left: 0px;
-  width: 10%;
+  right: 50px;
+  top: 30%;
+  width: 15%;
+  /* margin-right: 4%; */
   padding: 2%;
   text-align: center;
   font-size: 1vw;
@@ -91,6 +96,8 @@ h1 {
 
 #tresCartas {
   text-align: center;
+  /* left: 10%; */
+  width: 100%;
   column-count: 3;
   column-gap: 0px;
   
@@ -98,12 +105,11 @@ h1 {
 
 section {
   margin-top: 1%;
-  width: 100%;
+  width: 80%;
 }
 
 section figure img {
   height: 13vh;
-  /* float: left; */
 }
 
 figure {
@@ -131,7 +137,7 @@ figure {
 }
 
 section p {
-  width: 70%;
+  width: 100%;
   margin-bottom: 1%;
   margin-right: 10%;
 }
@@ -146,7 +152,7 @@ section p::first-letter{
 .galeria {
   width:100%;
   text-align: center;
-  height:50vh;
+  height:33vh;
 }
 
 article img {
@@ -167,12 +173,31 @@ footer {
   padding-top: 1%;
   color:yellow;
   padding-left: 3%;
+  
 }
 
-address {
-  column-count: 3;
+#izquierda {
+  display: inline-block;
 }
 
-address ul li{
+#centro {
+  display:inline-block;
+  margin-left: 20%;
+}
+
+#derecha {
+  margin-left: 24%;
+  display: inline-block;
+}
+
+#derecha ul li{
+  display: inline;
+}
+
+div ul li{
   list-style: none;
+}
+
+#derecha ul li {
+  font-size: 2vw;
 }
