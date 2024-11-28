@@ -1,0 +1,41 @@
+/* Juan Manuel Mendizábal Amat */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+  }
+
+  section {
+    width: 80%;
+    height:70vh;
+    background-color: antiquewhite;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: space-between;
+  }
+
+  article {
+    width: 170px;
+    height: 15vh;
+    background-color: aquamarine;
+    border: 5px double blueviolet;
+  }
+
+  article:nth-child(1) {
+    flex-grow: 1;
+  }
+
+  article:nth-child(4) {
+    flex-grow: 3;
+  }
+
+  article:nth-child(2) {
+    flex-basis: 120px;
+    align-self: flex-end;
+  }
+
+  article:nth-child(3) {
+    flex-shrink: 2;
+  }
