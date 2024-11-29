@@ -1,0 +1,75 @@
+/* Juan Manuel Mendizábal Amat */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.3vw;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+h2 {
+  
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  border: 2px solid black;
+}
+nav ul li {
+  list-style: none;
+  margin: 20%;
+}
+
+img {
+  width: 25vw;
+}
+
+section {
+  margin: 1%;
+  width: 90%;
+}
+
+figure {
+  border: 2px solid black;
+  border-radius: 20px;
+
+  padding: 2%;
+}
+
+#primeraFila {
+  display: flex;
+  background-color: red;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#segundaFila {
+  display: flex;
+  background-color: green;
+  flex-direction: row-reverse;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul li {
+  list-style: none;
+}
