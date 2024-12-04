@@ -6,7 +6,7 @@
 .container {
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  grid-template-rows: [uno] 100px [dos] 100px [tres] 100px [cuatro];
+  grid-template-rows: [uno] 200px [dos] 200px [tres] 200px [cuatro];
   margin: 20px auto;
   width: 60%;
 }

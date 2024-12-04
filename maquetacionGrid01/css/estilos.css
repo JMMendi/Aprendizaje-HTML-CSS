@@ -1,0 +1,61 @@
+/* Juan Manuel Mendizábal Amat */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+  }
+
+.container {
+  display: grid;
+  background-color: gray;
+  /* grid-template-columns: repeat(5, 20%);
+  grid-template-rows: 20%, 10%, 20%, 20%, 20%; */
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  grid-template-areas: 
+  "header header header header header"
+  "articulo1 articulo1 articulo1 articulo1 aside"
+  "articulo2 articulo2 articulo2 articulo2 aside"
+  "articulo3 articulo3 articulo3 articulo3 aside"
+  "footer footer footer footer footer";
+  margin: 20px auto;
+  text-align: center;
+  padding: 1em;
+  width: 80%;
+  height: 100vh;
+
+}
+
+#articulo1 {
+  background-color: red;
+  grid-area: articulo1;
+}
+
+#articulo2 {
+  background-color: orange;
+  grid-area: articulo2;
+}
+
+#articulo3 {
+  background-color: yellow;
+  grid-area: articulo3;
+}
+
+aside {
+  background-color: blue;
+  grid-area: aside;
+
+}
+
+footer {
+  background-color: chocolate;
+  grid-area: footer;
+
+}
+
+header {
+  background-color: aqua;
+  grid-area: header;
+
+}
+
