@@ -1,0 +1,53 @@
+/* Juan Manuel Mendizábal Amat */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color:gainsboro;
+}
+
+img {
+  width: 15vw;
+}
+
+section {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+figure {
+  text-align: center;
+  padding-top: 1%;
+  width: 17vw;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+figcaption {
+  text-align: center;
+}
+
+footer {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+ul {
+  padding-left: 1%;
+}
+
+li {
+  margin: 1%;
+}

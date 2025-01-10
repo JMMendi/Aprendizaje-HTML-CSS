@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="author" content="Juan Manuel Mendizábal Amat" />
+    <meta name="description" content="descripcion a modificar" />
+    <meta name="keywords" content="palabras, clave, separadas, por, coma" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="icon" type="img/png" href="media/logoIes.png" />
+    <title>>GIFs y Animaciones </title>
+    <!-- Juan Manuel Mendizábal Amat -->
+    <!-- ALT+SHIFT+A -->
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <img src="media/hug-kiss.gif" alt="Nutrias abrazándose" width="300" height="250">
+        <a href="#" class="boton-animado">Pasa el cursor</a>
+        <section>
+            <div class="cuadro"></div>
+        </section>
+        <section>
+            <div id="cuadro" style="width: 50px; height: 50px; background: blue;"></div>
+            <script>
+                gsap.to("#cuadro", { x: 200, duration: 2, repeat: -1, yoyo: true });
+            </script>
+
+        </section>
+        <section>
+            <div class="circulo"></div>
+
+        </section>
+
+        <section>
+            <div class="loader"></div>
+        </section>
+        <section>
+            <div class="texto-animado">
+                <span style="--i:1">H</span>
+                <span style="--i:2">o</span>
+                <span style="--i:3">l</span>
+                <span style="--i:4">a</span>
+            </div>
+        </section>
+        <section>
+            <div class="rebote">¡Hola Mundo!</div>
+        </section>
+        <section>
+            <div class="cuadro2"></div>
+        </section>
+        <section>
+            <div class="boton">Pasa el cursor</div>
+        </section>
+        <section>
+            <img src="https://via.placeholder.com/300" alt="Imagen de ejemplo" class="imagen">
+        </section>
+        <section>
+            <img src="https://via.placeholder.com/300" alt="Imagen de ejemplo" class="imagen2">
+        </section>
+        <section>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red">
+                    <animate attributeName="fill" from="red" to="blue" dur="2s" repeatCount="indefinite" />
+                </circle>
+            </svg>
+        </section>
+        <section>
+            <svg width="200" height="200">
+                <path d="M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80" stroke="black" fill="transparent"
+                    strokewidth="2">
+                    <animate attributeName="stroke-dasharray" from="0, 200" to="200, 0" dur="3s"
+                        repeatCount="indefinite" />
+                </path>
+            </svg>
+        </section>
+        <section>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="3" fill="none" class="pulsar" />
+            </svg>
+        </section>
+        <section>
+            <h2>Mapa de Imágenes Interactivo</h2>
+            <img src="https://via.placeholder.com/500x300" usemap="#mapa" alt="Ejemplo de mapa de
+            imagen" width="500" height="300">
+            <map name="mapa">
+                <!-- Área rectangular -->
+                <area shape="rect" coords="50,50,200,150" href="https://example.com/rect" alt="Área
+                rectangular">
+                <!-- Área circular -->
+                <area shape="circle" coords="350,150,50" href="https://example.com/circle" alt="Área
+                circular">
+                <!-- Área poligonal -->
+                <area shape="poly" coords="300,50,400,150,300,250,200,150" href="https://example.com/poly"
+                    alt="Área poligonal">
+            </map>
+
+        </section>
+    </main>
+    <footer>
+        <address>
+            <ul>
+                <li>Juan Manuel Mendizábal Amat</li>
+                <li>2DAW-DIW</li>
+                <li>Curso 2024/25</li>
+            </ul>
+        </address>
+    </footer>
+</body>
+
+</html>
