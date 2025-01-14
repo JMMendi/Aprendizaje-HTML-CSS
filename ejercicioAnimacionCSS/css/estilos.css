@@ -5,6 +5,11 @@
     padding: 0;
   }
 
+h1 {
+  margin-left: 30%;
+  margin-top: 2%;
+}
+
 #recuadro {
   width: 70vw;
   height: 70vh;
@@ -21,7 +26,6 @@
   animation: 
   movimiento 5s ease-in-out infinite,
   rotacion 5s ease-in-out infinite;
-  /* animation-fill-mode: both; */
   animation-direction: alternate;
   animation-composition: add;
 }
@@ -42,7 +46,7 @@
 
 @keyframes rotacion {
   to {
-    transform: rotate(360deg) scale(0.5);
+    /* transform: rotate(360deg) scale(0.5); */
     transform: skewX(30deg);
   }
 
